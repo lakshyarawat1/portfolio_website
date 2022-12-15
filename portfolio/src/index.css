@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: 'Poppins', sans-serif;
+  background-color: #1d1d1d;
+}
+
+.line{
+  height: 200px;
+  border-left: rgb(203 213 225) solid 2px;
+}
+
+.line-r{
+  height: 200px;
+  border-right: rgb(203 213 225) solid 2px;
+}
+
+.vertical{
+  writing-mode: vertical-lr;
+}
