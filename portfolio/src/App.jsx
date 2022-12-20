@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import './index.css'
 import About from './components/About'
 import Contact from './components/Contact'
@@ -10,14 +10,12 @@ import Sidebar from './components/Sidebar'
 function App(){
   return(
     <>
-    <div>
       <Sidebar />
       <Hero />
       <About />
       <Projects />
       <Misc />
       <Contact />
-    </div>
     </>
   )
 }

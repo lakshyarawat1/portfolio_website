@@ -20,3 +20,69 @@
 .vertical{
   writing-mode: vertical-lr;
 }
+
+.handWriting{
+  font-family: 'La Belle Aurore', cursive;
+}
+
+.heading{
+  font-family: 'Spectral', serif;
+}
+
+.btn{
+  border: #1dffff 2px solid;
+  width: 15%;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Chivo Mono', monospace;
+}
+
+@media screen and (max-width: 768px) {
+  .port{
+    margin-left: -60px;
+  }
+  .textSmaller{
+    font-size: smaller;
+    margin: -50px;
+    width: 100%;
+  }
+  .side{
+    display: none;
+  }
+  .heading{
+    font-size: large;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sidebar{
+    display:flex;
+  }
+  .mobileSide{
+    display: block;
+  }
+  .hero{
+    margin: -70px;
+    width: 100%;
+  }
+  .btn{
+    width: 50%;
+    margin-bottom: 10rem;
+  }
+}
+
+.heading{
+  font-family: 'Unbounded', cursive;
+  border-right: solid 3px white;
+  white-space : nowrap;
+  overflow: hidden;
+  animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end); 
+}
+
+@keyframes animated-cursor{
+  from {border-right-color : white;}
+  to {border-right-color : transparent;}
+}
+
+@keyframes animated-text{
+  from { width : 0 }
+  to { width : 100%}
+}
