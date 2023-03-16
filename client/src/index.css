@@ -5,3 +5,9 @@
 :root{
     font-family: 'Rajdhani', sans-serif;
 }
+
+.headingFont{
+      font-weight: 900;
+      --tw-text-opacity: 1;
+      color: rgb(54 255 229 / var(--tw-text-opacity));
+}
