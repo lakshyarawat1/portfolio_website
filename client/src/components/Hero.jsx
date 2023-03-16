@@ -2,12 +2,14 @@ import React from "react";
 import heroImg from "../assets/header_bg.jpg";
 import { CiMenuFries } from "react-icons/ci";
 import icons from "../constants/heroIcons";
+import { motion } from "framer-motion";
+import { AiFillCaretDown } from "react-icons/ai";
 
 const Hero = () => {
   return (
     <div>
-      <div className="fixed bg-gradient-to-r from-[#03897e] to-[#25b380] flex flex-row">
-        <img src={heroImg} className="w-full opacity-30 fixed" />
+      <div className="bg-gradient-to-r from-[#03897e] to-[#25b380] flex flex-row">
+        <img src={heroImg} className="opacity-30 absolute w-full" />
         <div className="w-full h-full">
           <div className="flex mx-10 my-3">
             {icons.map((genre, idx, key) => {
@@ -39,6 +41,7 @@ const Hero = () => {
             <button className="m-10 border border-black py-2 px-10">
               About Us
             </button>
+            <AiFillCaretDown className="text-white text-3xl w-full mt-8 animate-bounce opacity-60" />
           </div>
         </div>
       </div>
