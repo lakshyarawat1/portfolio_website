@@ -3,7 +3,7 @@ import { GiSpellBook } from "react-icons/gi";
 
 const Education = () => {
   return (
-    <div className=" bg-[#272c34]">
+    <div className=" bg-[#272c34] pb-20">
       <div className="headingFont text-5xl text-center p-14 font-black">
         EDUCATION
       </div>
