@@ -1,4 +1,5 @@
 import './App.css'
+import Contact from './components/Contact'
 import Education from './components/Education'
 import Hero from './components/Hero'
 import HireBanner from './components/HireBanner'
@@ -16,7 +17,8 @@ function App() {
       <Education />
       <Skills />
       <Works />
-      <HireBanner />    
+      <HireBanner /> 
+      <Contact />
     </div>
   )
 }
