@@ -13,12 +13,12 @@ const Works = () => {
             HTML / CSS / JS and am comfortable with pure CSS too.
           </div>
         </div>
-        <div className="p-10 bg-[#1eb8c0] mt-[-20px]">
-          <div className="text-5xl font-black text-[#FFD700] mb-4">01.</div>
-          <div className="font-black text-3xl text-black">
+        <div className="p-10 bg-[#12939a] my-[-20px]">
+          <div className="text-5xl font-black text-[#edff25] mb-4">01.</div>
+          <div className="font-black text-3xl text-[#1b1e23]">
             BACK END DEVELOPMENT
           </div>
-          <div className="text-white text-lg mt-8">
+          <div className="font-black text-lg text-[#1b1e23] mt-8">
             In Backend development, I prefer to use NodeJS along with Express
             for middlewares. I have experience with django. I have been working
             with MERN stack for quite a long time and have created multiple
