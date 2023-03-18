@@ -1,7 +1,7 @@
-import { ImFacebook, ImGithub } from "react-icons/im";
+import { ImGithub } from "react-icons/im";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
-import { SiGmail } from 'react-icons/si'
+import { SiGmail, SiHackerone } from "react-icons/si";
 
-const icons = [ImFacebook, ImGithub, SiGmail, FaInstagram, FaTwitter];
+const icons = [SiHackerone, ImGithub, SiGmail, FaInstagram, FaTwitter];
 
 export default icons;
