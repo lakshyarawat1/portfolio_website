@@ -1,11 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import heroImg from "../assets/header_bg.jpg";
 import { CiMenuFries } from "react-icons/ci";
 import icons from "../constants/heroIcons";
 import { motion } from "framer-motion";
 import { AiFillCaretDown } from "react-icons/ai";
-
 const Hero = () => {
+
   return (
     <div>
       <div className="bg-gradient-to-r from-[#03897e] to-[#25b380] flex flex-row">
@@ -23,7 +23,6 @@ const Hero = () => {
                 </li>
               );
             })}
-            <CiMenuFries className="mt-10 text-3xl cursor-pointer font-bold ml-[800px]" />
           </div>
           <div className="text-white opacity-80 text-center mt-10">
             <div className=" text-8xl">
