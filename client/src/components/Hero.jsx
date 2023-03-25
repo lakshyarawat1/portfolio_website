@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {useRef} from "react";
 import heroImg from "../assets/header_bg.jpg";
-import { CiMenuFries } from "react-icons/ci";
 import icons from "../constants/heroIcons";
 import { motion } from "framer-motion";
 import { AiFillCaretDown } from "react-icons/ai";
+
+
 const Hero = () => {
 
   return (
@@ -15,17 +16,22 @@ const Hero = () => {
             {icons.map((genre, idx, key) => {
               const Icon = icons[idx];
               return (
-                <li
+                <motion.div
+                  animate={{ x: 0, y: 0 }}
+                  initial={{ x: -100, y: -100, opacity:0.6 }}
+                  whileHover={{ scale: 1.5, opacity: 1 }}
+                  drag={true}
+                  whileTap={{ scale: 0.8, opacity: 1 }}
                   key={genre.id}
-                  className=" cursor-pointer mx-6 my-10 text-2xl text-white opacity-60 list-none"
+                  className=" cursor-pointer mx-6 my-10 text-2xl text-white list-none"
                 >
                   <Icon key={key} />
-                </li>
+                </motion.div>
               );
             })}
           </div>
           <div className="text-white opacity-80 text-center mt-10">
-            <div className=" text-8xl">
+            <div className="text-8xl">
               Hi There ! <br />
             </div>
             <div className="text-4xl mt-4">

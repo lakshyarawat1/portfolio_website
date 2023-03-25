@@ -2,6 +2,7 @@ import React from "react";
 import profilePic from "../assets/react.svg";
 import { RiCodeSSlashLine } from "react-icons/ri";
 import { SiKalilinux } from "react-icons/si";
+import { motion } from 'framer-motion'
 
 const Home = () => {
   return (
@@ -13,9 +14,10 @@ const Home = () => {
         <div className="flex flex-row text-white">
           <div>
             <div className="w-[50%]  flex flex-row  mt-2">
-              <div className="text-9xl ml-20 my-20 text-[#25b380]">
+              <motion.div className="text-9xl ml-20 my-20 text-[#25b380]"
+              >
                 <RiCodeSSlashLine />
-              </div>
+              </motion.div>
               <div className="text-9xl ml-36 mr-20 my-20 font-bold text-[#47d7ff] inline-block">
                 <SiKalilinux />
               </div>
