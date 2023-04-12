@@ -15,7 +15,7 @@ const Hero = () => {
               const Icon = icons[idx];
               return (
                 <motion.div
-                  animate={{ x: 0, y: 0 }}
+                  animate={{ x: 0, y: 0, transition: { delay: 2 } }}
                   initial={{ x: -100, y: -100, opacity: 0.6 }}
                   whileHover={{ scale: 1.5, opacity: 1 }}
                   drag={true}
@@ -31,68 +31,102 @@ const Hero = () => {
           <div className="text-white text-center mt-10">
             <div className="text-8xl flex w-full text-center pl-[35%]">
               <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
+                animate={{
+                  x: 0,
+                  opacity: 0.6,
+                  transition: { delay: 2 },
+                }}
+                initial={{ opacity: 0, x: -200 }}
                 whileHover={{ scale: 1.5, opacity: 1 }}
+                whileTap={{ scale: 0.8, opacity: 1 }}
               >
                 H
               </motion.p>
               <motion.p
-                initial={{ scale: 0.2, x: -200 }}
+                initial={{ opacity: 0, x: -200 }}
                 whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
+                animate={{
+                  x: 0,
+                  opacity: 0.6,
+                  transition: { delay: 2.2 },
+                }}
                 whileHover={{ scale: 1.5, opacity: 1 }}
-                
               >
                 i
               </motion.p>
 
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
+             <motion.p
+                initial={{ x: -200, opacity: 0 }}
                 whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
+                animate={{
+                  x: 0,
+                  opacity: 0.6,
+                  transition: { delay: 2.4 },
+                }}
                 whileHover={{ scale: 1.5, opacity: 1 }}
                 className="ml-10"
               >
                 T
               </motion.p>
               <motion.p
-                initial={{ scale: 0.2, x: -200 }}
+                initial={{ opacity: 0, x: -200 }}
                 whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
+                animate={{
+                  x: 0,
+                  opacity: 0.6,
+                  transition: { delay: 2.6 },
+                }}
                 whileHover={{ scale: 1.5, opacity: 1 }}
               >
                 h
               </motion.p>
               <motion.p
-                initial={{ scale: 0.2, x: -200 }}
+                initial={{ opacity: 0, x: -200 }}
                 whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
+                animate={{
+                  x: 0,
+                  opacity: 0.6,
+                  transition: { delay: 2.8 },
+                }}
                 whileHover={{ scale: 1.5, opacity: 1 }}
               >
                 e
               </motion.p>
               <motion.p
-                initial={{ scale: 0.2, x: -200 }}
+                initial={{ opacity: 0, x: -200 }}
                 whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
+                animate={{
+                  x: 0,
+                  opacity: 0.6,
+                  transition: { delay: 3 },
+                }}
                 whileHover={{ scale: 1.5, opacity: 1 }}
               >
                 r
               </motion.p>
               <motion.p
-                initial={{ scale: 0.2, x: -200 }}
+                initial={{ opacity: 0, x: -200 }}
                 whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
+                animate={{
+                  x: 0,
+                  opacity: 0.6,
+                  transition: { delay: 3.2 },
+                }}
+                whileHover={{
+                  scale: 1.5,
+                  opacity: 1,
+                }}
               >
                 e
               </motion.p>
               <motion.p
-                initial={{ scale: 0.2, x: -200 }}
+                initial={{ opacity: 0, x: -200 }}
                 whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
+                animate={{
+                  x: 0,
+                  opacity: 0.6,
+                  transition: { delay: 3.4 },
+                }}
                 whileHover={{ scale: 1.5, opacity: 1 }}
                 className="ml-10"
               >
@@ -192,14 +226,21 @@ const Hero = () => {
                 a
               </motion.p>
             </div>
-            <motion.div className="mt-2"
-              initial={{ opacity: 0 }} animate={{ opacity: 1, delay : 1 }}
-              >WEB DEVELOPER / ETHICAL HACKER</motion.div>
+            <motion.div
+              className="mt-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, delay: 1 }}
+            >
+              WEB DEVELOPER / ETHICAL HACKER
+            </motion.div>
           </div>
           <div className="flex-row text-center my-10">
-            <button className="m-10 border border-black py-2 px-10">
+            <motion.button
+            
+                whileHover={{ backgroundColor : '#fff' }}
+              className="m-10 border border-black py-2 px-10">
               Explore my projects
-            </button>
+            </motion.button>
             <button className="m-10 border border-black py-2 px-10">
               About Us
             </button>

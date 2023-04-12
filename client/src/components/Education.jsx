@@ -11,7 +11,7 @@ const Education = () => {
         <div className="py-3">
           <div className="relative antialiased">
             {/* vertical bar */}
-            <div class="hidden sm:block w-1 bg-[#66dee5] mx-10 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+            <div className="hidden sm:block w-1 bg-[#66dee5] mx-10 absolute h-full left-1/2 transform -translate-x-1/2"></div>
             {/* left section */}
             <div className="mt-6 ">
               <div className="flex flex-col sm:flex-row items-center">
