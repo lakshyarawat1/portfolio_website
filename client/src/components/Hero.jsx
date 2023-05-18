@@ -13,7 +13,7 @@ import {
 const Hero = () => {
   return (
     <div>
-      <div className="bg-[#272c34] flex flex-col">
+      <div className="bg-[#272c34] flex flex-col -mt-8">
         <img
           src="https://cdn.pixabay.com/photo/2021/09/13/13/55/cover-6621486_1280.jpg"
           className="opacity-40 absolute w-full h-[107vh] object-cover z-0"

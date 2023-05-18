@@ -1,5 +1,6 @@
 import './App.css'
 import Contact from './components/Contact'
+import Cursor from './components/Cursor'
 import Education from './components/Education'
 import Hero from './components/Hero'
 import HireBanner from './components/HireBanner'
@@ -11,7 +12,8 @@ import Works from './components/Works'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App cursor-none">
+      <Cursor />
       <Hero />
       <Home />
       <Education />
