@@ -1,250 +1,56 @@
 import React, { useRef } from "react";
 import heroImg from "../assets/header_bg.jpg";
-import icons from "../constants/heroIcons";
 import { motion } from "framer-motion";
 import { AiFillCaretDown } from "react-icons/ai";
+import {
+  SiGithub,
+  SiGmail,
+  SiHackerone,
+  SiInstagram,
+  SiTwitter,
+} from "react-icons/si";
 
 const Hero = () => {
   return (
     <div>
-      <div className="bg-gradient-to-r from-[#03897e] to-[#25b380] flex flex-row">
-        <img src={heroImg} className="opacity-30 absolute w-full" />
-        <div className="w-full h-full">
-          <div className="flex mx-10 my-3">
-            {icons.map((genre, idx, key) => {
-              const Icon = icons[idx];
-              return (
-                <motion.div
-                  animate={{ x: 0, y: 0, transition: { delay: 2 } }}
-                  initial={{ x: -100, y: -100, opacity: 0.6 }}
-                  whileHover={{ scale: 1.5, opacity: 1 }}
-                  drag={true}
-                  whileTap={{ scale: 0.8, opacity: 1 }}
-                  key={genre.id}
-                  className=" cursor-pointer mx-6 my-10 text-2xl text-white list-none"
-                >
-                  <Icon key={key} />
-                </motion.div>
-              );
-            })}
+      <div className="bg-[#272c34] flex flex-col">
+        <img
+          src="https://cdn.pixabay.com/photo/2021/09/13/13/55/cover-6621486_1280.jpg"
+          className="opacity-40 absolute w-full h-[107vh] object-cover z-0"
+        />
+        <div className="w-full h-full flex z-10">
+          <div className="hidden mx-10 my-3 md:flex md:flex-col">
+            <a href="https://hackerone.com/hacker_no_8055?type=user">
+              <SiHackerone className="scale-100 hover:scale-150 cursor-pointer mx-6 my-10 text-2xl text-white list-none" />
+            </a>
+            <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=userid@gmail.com&tf=1">
+              <SiGmail className="scale-100 hover:scale-150 cursor-pointer mx-6 my-10 text-2xl text-white list-none" />
+            </a>
+            <a href="https://www.instagram.com/___alpha___j44t">
+              <SiInstagram className="scale-100 hover:scale-150 cursor-pointer mx-6 my-10 text-2xl text-white list-none" />
+            </a>
+            <a href="https://www.twitter.com/Lakshya40740974">
+              <SiTwitter className="scale-100 hover:scale-150 cursor-pointer mx-6 my-10 text-2xl text-white list-none" />
+            </a>
+            <a href="https://www.github.com/lakshyarawat1">
+              <SiGithub className="scale-100 hover:scale-150 cursor-pointer mx-6 my-10 text-2xl text-white list-none" />
+            </a>
           </div>
-          <div className="text-white text-center mt-10">
-            <div className="text-8xl flex w-full text-center pl-[35%]">
-              <motion.p
-                animate={{
-                  x: 0,
-                  opacity: 0.6,
-                  transition: { delay: 2 },
-                }}
-                initial={{ opacity: 0, x: -200 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-              >
-                H
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{
-                  x: 0,
-                  opacity: 0.6,
-                  transition: { delay: 2.2 },
-                }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-              >
-                i
-              </motion.p>
-
-             <motion.p
-                initial={{ x: -200, opacity: 0 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{
-                  x: 0,
-                  opacity: 0.6,
-                  transition: { delay: 2.4 },
-                }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className="ml-10"
-              >
-                T
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{
-                  x: 0,
-                  opacity: 0.6,
-                  transition: { delay: 2.6 },
-                }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-              >
-                h
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{
-                  x: 0,
-                  opacity: 0.6,
-                  transition: { delay: 2.8 },
-                }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-              >
-                e
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{
-                  x: 0,
-                  opacity: 0.6,
-                  transition: { delay: 3 },
-                }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-              >
-                r
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{
-                  x: 0,
-                  opacity: 0.6,
-                  transition: { delay: 3.2 },
-                }}
-                whileHover={{
-                  scale: 1.5,
-                  opacity: 1,
-                }}
-              >
-                e
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{
-                  x: 0,
-                  opacity: 0.6,
-                  transition: { delay: 3.4 },
-                }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className="ml-10"
-              >
-                !
-              </motion.p>
-              <br />
+          <div className="text-white text-center mt-10 mx-auto h-[100vh] pt-20">
+            <div className="text-4xl md:text-7xl font-black text-center opacity-90 tracking-widest">
+              HI THERE
             </div>
-            <div className="flex w-full text-3xl gap-2 mt-5 pl-[35%]">
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className="ml-10"
-              >
-                I
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className="ml-5"
-              >
-                a
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className=""
-              >
-                m
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className="ml-10"
-              >
-                L
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className=""
-              >
-                a
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className=""
-              >
-                k
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className=""
-              >
-                s
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className=""
-              >
-                h
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className=""
-              >
-                y
-              </motion.p>
-              <motion.p
-                initial={{ scale: 0.2, x: -200 }}
-                whileTap={{ scale: 0.8, opacity: 1 }}
-                animate={{ scale: 1, x: 0, opacity: 0.6 }}
-                whileHover={{ scale: 1.5, opacity: 1 }}
-                className=""
-              >
-                a
-              </motion.p>
+            <div className="mt-6">I AM LAKSHYA</div>
+            <div className="mt-6">WEB DEVELOPER / ETHICAL HACKER</div>
+            <div className="flex-row text-center my-16">
+              <button className="m-10 border border-white rounded-xl py-2 px-10 hover:bg-white hover:text-black">
+                EXPLORE MY PROJECTS
+              </button>
+              <button className="m-10 border border-white rounded-xl py-2 px-10 hover:bg-white hover:text-black">
+                ABOUT ME
+              </button>
+              <AiFillCaretDown className="text-white hidden md:flex text-3xl w-full mt-12 animate-bounce opacity-60" />
             </div>
-            <motion.div
-              className="mt-2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, delay: 1 }}
-            >
-              WEB DEVELOPER / ETHICAL HACKER
-            </motion.div>
-          </div>
-          <div className="flex-row text-center my-10">
-            <motion.button
-            
-                whileHover={{ backgroundColor : '#fff' }}
-              className="m-10 border border-black py-2 px-10">
-              Explore my projects
-            </motion.button>
-            <button className="m-10 border border-black py-2 px-10">
-              About Us
-            </button>
-            <AiFillCaretDown className="text-white text-3xl w-full mt-8 animate-bounce opacity-60" />
           </div>
         </div>
       </div>

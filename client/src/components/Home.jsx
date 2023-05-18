@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import profilePic from "../assets/react.svg";
 import { RiCodeSSlashLine } from "react-icons/ri";
 import { SiKalilinux } from "react-icons/si";
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Home = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  const logoVariants = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <div>
       <div className="bg-[#1b1e23] text-center pb-20">
@@ -14,7 +29,11 @@ const Home = () => {
         <div className="flex flex-row text-white">
           <div>
             <div className="w-[50%]  flex flex-row  mt-2">
-              <motion.div className="text-9xl ml-20 my-20 text-[#25b380]"
+              <motion.div
+                className="text-9xl ml-20 my-20 text-[#25b380]"
+                initial="hidden"
+                animate={controls}
+                variants={logoVariants}
               >
                 <RiCodeSSlashLine />
               </motion.div>
