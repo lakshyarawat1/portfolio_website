@@ -34,18 +34,18 @@ const Contact = () => {
   return (
     <div>
       <div className="bg-[#34383d] py-16">
-        <div className="headingFont text-6xl text-center">CONTACT ME</div>
+        <div className="headingFont text-4xl text-center">CONTACT ME</div>
         <form onSubmit={handleSubmit}>
           <div className="m-20 flex">
             <div className="ml-20 w-1/2">
-              <label className="text-slate-300 text-2xl mr-20">Name * </label>
+              <label className="text-slate-300 text-xl mr-20">Name * </label>
               <input
                 name="name"
                 className="bg-transparent border-b w-[90%] text-slate-300"
               />
             </div>
             <div className="w-1/2">
-              <label className="text-slate-300 text-2xl">Email * </label>
+              <label className="text-slate-300 text-">Email * </label>
               <input
                 name="email"
                 className="bg-transparent border-b w-[90%] text-slate-300"
@@ -53,7 +53,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="ml-36 w-1/2">
-            <label className="text-slate-300 text-2xl">Message * </label>
+            <label className="text-slate-300 text-xl">Message * </label>
             <textarea
               name="message"
               className="bg-transparent border-b w-full"

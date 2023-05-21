@@ -12,12 +12,11 @@ import Works from './components/Works'
 function App() {
 
   return (
-    <div className="App cursor-none">
-      <Cursor />
+    <div className="App">
       <Hero />
       <Home />
       <Education />
-      <Skills />
+      {/* <Skills /> */}
       <Works />
       <HireBanner /> 
       <Contact />

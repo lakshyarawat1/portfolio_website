@@ -19,7 +19,7 @@ const Hero = () => {
           className="opacity-40 absolute w-full h-[107vh] object-cover z-0"
         />
         <div className="w-full h-full flex z-10">
-          <div className="hidden mx-10 my-3 md:flex md:flex-col">
+          <div className="hidden mx-10 my-12 md:flex md:flex-col">
             <a href="https://hackerone.com/hacker_no_8055?type=user">
               <SiHackerone className="scale-100 hover:scale-150 cursor-pointer mx-6 my-10 text-2xl text-white list-none" />
             </a>
